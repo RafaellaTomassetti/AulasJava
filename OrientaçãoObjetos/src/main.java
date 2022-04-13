@@ -13,6 +13,23 @@ public class main {
 		System.out.println(pessoa1.nome);
 		System.out.println(pessoa1.numFigurinhas);
 
+		Pessoa pessoa2 = new Pessoa();
+		pessoa2.nome = "João";
+		pessoa2.numFigurinhas = 5;
+		
+		System.out.println(pessoa2.nome);
+		System.out.println(pessoa2.numFigurinhas);
+
+		boolean msg = pessoa1.dar(3, pessoa2);
+		
+		if(msg == true) {
+		System.out.println(pessoa1.nome);
+		System.out.println(pessoa1.numFigurinhas);
+		
+		System.out.println(pessoa2.nome);
+		System.out.println(pessoa2.numFigurinhas);}
+
+		
 	}
 
 }
