@@ -106,7 +106,7 @@ public class main {
 //		}
 		
 //		x = 0;
-//		do {            //do...while: faz primeiro, testa e se a condção for verdadeira, vai parar de executar
+//		do {            //do...while: faz primeiro, testa e se a condção for verdadeira, vai continuar a execução
 //			System.out.println(x);
 //			x=x+1;
 //		} while(x<10);
