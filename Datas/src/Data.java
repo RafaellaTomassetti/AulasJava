@@ -16,22 +16,33 @@ public class Data {
 		this.mes = mes;
 		this.ano = ano;
 	}
+	// Construtor completo, que recebe informações de data e horário
+
 	public Data(int dia, int mes, int ano, int hora, int min, int seg) {
+		// Chama o outro construtor da classe
 		this(dia, mes, ano);
 		this.hora = hora;
 		this.min = min;
 		this.seg = seg;
 	}
-	
+	// Imprime a data/hora formatada (de acordo com o formato especificado)
+
 	public void imprimir(int formato) {
+		// Monta a string de impressão de data
 		String data = dia + "/" + mes + "/" + ano;
 				
 		if(hora == -1) {
+			// Se hora for -1, significa que os dados de horário não foram passado no construtor.
+			// Então exibe só a data
 			System.out.println(data);
 		} else {
+			// Monta parte da string da horário (deixa a hora de fora por enquanto)
 			String horario = ":" + min + ":" + seg;
 				
 			if (formato == FORMATO_24H) {
+				// Se o formato for 24h, concatena a hora no início da string (o atributo já foi
+				// fornecido no formato 24h)
+
 				horario = hora + horario;
 			} else {
 				// Se o formato for 12h
@@ -57,7 +68,7 @@ public class Data {
 
 		}
 	}
-
+//Métodos getters
 	public int getDia() {
 		return dia;
 	}

@@ -2,7 +2,7 @@ public class main {
    
     public static void main(String[] args)
     {
-        Data d1 = new Data(01,02,03,04,05,06);
+        Data d1 = new Data(01,02,03,04,05,06);  //Data(_)= é o construtor
         d1.imprimir(Data.FORMATO_24H);
         d1.imprimir(Data.FORMATO_12H);
         
