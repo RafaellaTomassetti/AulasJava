@@ -1,7 +1,7 @@
 
 public class Animal {
 
-	public void falar() {
+	public void Falar() {
 		
 	}
 	

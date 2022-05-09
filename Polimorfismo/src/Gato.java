@@ -2,7 +2,7 @@
 public class Gato extends Animal{
 
 	@Override
-	public void falar() {
+	public void Falar() {
 		System.out.println("Miaau");
 	}
 
