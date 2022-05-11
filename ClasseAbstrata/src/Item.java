@@ -1,27 +1,31 @@
 
-public abstract class Item {
-
-	private int posX;
-	private int posY;
+public abstract class Item { //classe abstrata
 	
-	public void pegar() {
-		
+	private int posicaoX = 1;
+	private int posicaoY = 1;
+	
+	public abstract void pegar();  //todos que herdarem a classe ITEM, devem ter o método pegar
+	//classe abstrata só tem a assinatura (;)
+	//se fosse implementar, teriam as chaves ({})
+	
+	
+	//Getter and Setter//
+
+	public int getPosicaoX() {
+		return posicaoX;
 	}
 
-	public int getPosX() {
-		return posX;
+	public void setPosicaoX(int posicaoX) {
+		this.posicaoX = posicaoX;
 	}
 
-	public void setPosX(int posX) {
-		this.posX = posX;
+	public int getPosicaoY() {
+		return posicaoY;
 	}
 
-	public int getPosY() {
-		return posY;
-	}
-
-	public void setPosY(int posY) {
-		this.posY = posY;
+	public void setPosicaoY(int posicaoY) {
+		this.posicaoY = posicaoY;
 	}
 	
+
 }
