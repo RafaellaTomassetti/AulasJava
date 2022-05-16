@@ -35,9 +35,9 @@ public abstract class ContaBancaria {  //classe abstrata não pode ser instancia
 	    return saldo;
 	 }
 	
-	public double calcularSaldo() { //regra do cálculo do saldo final
-		return 0;
-	} 
+	public abstract double calcularSaldo();  //regra do cálculo do saldo final
+	
+
 	
 	//Getters e Setters
 	public double getSaldo() {
