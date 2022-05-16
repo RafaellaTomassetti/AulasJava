@@ -9,7 +9,7 @@ public class main {  //classe main para aplicação dos métodos
 		AreaCalculavel quadrado = new Quadrado(); //objeto quadrado instanciado. É da classe AreaCalculavel
 		quadrado.calcularArea();	
 		
-		AreaCalculavel retangulo = new Retangulo(); //objeto retangulo instanciado. É da classe AreaCalculavel
+		AreaCalculavel retangulo = new Retangulo(); //objeto retângulo instanciado. É da classe AreaCalculavel
 		retangulo.calcularArea();
 		
 		
