@@ -11,35 +11,35 @@ public abstract class ContaBancaria {  //classe abstrata não pode ser instancia
 	}
 	public double sacar(double valor) { //método para sacar um valor do saldo inicial. O parâmetro é o valor que será sacado.
 		
-		if (valor>saldo) {
+		if (valor>saldo) {   //teste para saber se tem valor suficiente para sacar.
 			System.out.println("Você não tem valor sufuciente para fazer esse saque. Seu saldo atual é " + saldo);
 		} else {
 			saldo = saldo-valor;
 			System.out.println("Saque de R$ " + valor + " realizado.");
 
 		}
-		
+	
 		return saldo;
 		
 		
 	}
-	public double transferir(double valor) {
+	public double transferir(double valor) { //método para transerir um valor do saldo inicial. O parâmetro é o valor que será trsnferido.
 	  
-	    if (valor>saldo) {
+	    if (valor>saldo) { //teste para saber se tem valor suficiente para trsnsferir.
 			System.out.println("Você não tem valor sufuciente para fazer essa transferência. Seu saldo atual é " + saldo);
 		} else {
 			  saldo = saldo-valor;
 				System.out.println("Transferência de R$ " + valor + " realizado.");
 
 		}
-		
 	    return saldo;
 	 }
+	
 	public double calcularSaldo() { //regra do cálculo do saldo final
 		return 0;
 	} 
 	
-	
+	//Getters e Setters
 	public double getSaldo() {
 		return saldo;
 	}
