@@ -6,19 +6,19 @@ public class Cliente {
 	Double valor;
 	
 	
-	void receber(Double valor) {
+	void receber(Double valor) {  //mÃ©todo com parÃ¢metro de valor
 		this.valor += valor;
 	}
 
 	boolean dar(Double valor, Cliente cliente) {
 
 		if (valor > this.valor) {
-			System.out.println("Você não tem valor suficientes para transferir para " + cliente.nome);
-			System.out.println("Seu saldo é " + this.valor);
+			System.out.println("VocÃª nÃ£o tem valor suficientes para transferir para " + cliente.nome);
+			System.out.println("Seu saldo Ã© " + this.valor);
 			return false; // retorno booleano
 
 		} else {
-			System.out.println("Você tem valor suficientes para transferir para " + cliente.nome);
+			System.out.println("VocÃª tem valor suficientes para transferir para " + cliente.nome);
 			this.valor -= valor;
 			cliente.receber(valor);
 			return true; // retorno booleano
