@@ -1,15 +1,15 @@
 
-public class main {
+public class main {  //classe main para aplicação dos métodos
 
 	public static void main(String[] args) {
 	
-		AreaCalculavel circulo = new Circulo();
+		AreaCalculavel circulo = new Circulo();  //objeto círculo instanciado. É da classe AreaCalculavel
 		circulo.calcularArea();
 		
-		AreaCalculavel quadrado = new Quadrado();
+		AreaCalculavel quadrado = new Quadrado(); //objeto quadrado instanciado. É da classe AreaCalculavel
 		quadrado.calcularArea();	
 		
-		AreaCalculavel retangulo = new Retangulo();
+		AreaCalculavel retangulo = new Retangulo(); //objeto retangulo instanciado. É da classe AreaCalculavel
 		retangulo.calcularArea();
 		
 		
