@@ -1,18 +1,18 @@
 
-public abstract class ContaBancaria {  //classe abstrata não pode ser instanciada
+public abstract class ContaBancaria {  //classe abstrata nÃ£o pode ser instanciada
 	
-	private double saldo = 10; //atributo visível apenas para as subclasses
+	private double saldo = 10; //atributo visÃ­vel apenas para as subclasses
 	
-	public double depositar(double valor) {
+	public double depositar(double valor) { //mÃ©todo para somar um valor ao saldo inicial. O parÃ¢metro Ã© o valor que serÃ¡ somado.
 		saldo = saldo+valor;
-		System.out.println("Depósito de R$ " + valor + " realizado.");
+		System.out.println("DepÃ³sito de R$ " + valor + " realizado.");
 		return saldo;
 		
 	}
-	public double sacar(double valor) {
+	public double sacar(double valor) { //mÃ©todo para sacar um valor do saldo inicial. O parÃ¢metro Ã© o valor que serÃ¡ sacado.
 		
 		if (valor>saldo) {
-			System.out.println("Você não tem valor sufuciente para fazer esse saque. Seu saldo atual é " + saldo);
+			System.out.println("VocÃª nÃ£o tem valor sufuciente para fazer esse saque. Seu saldo atual Ã© " + saldo);
 		} else {
 			saldo = saldo-valor;
 			System.out.println("Saque de R$ " + valor + " realizado.");
@@ -26,16 +26,16 @@ public abstract class ContaBancaria {  //classe abstrata não pode ser instanciad
 	public double transferir(double valor) {
 	  
 	    if (valor>saldo) {
-			System.out.println("Você não tem valor sufuciente para fazer essa transferência. Seu saldo atual é " + saldo);
+			System.out.println("VocÃª nÃ£o tem valor sufuciente para fazer essa transferÃªncia. Seu saldo atual Ã© " + saldo);
 		} else {
 			  saldo = saldo-valor;
-				System.out.println("Transferência de R$ " + valor + " realizado.");
+				System.out.println("TransferÃªncia de R$ " + valor + " realizado.");
 
 		}
 		
 	    return saldo;
 	 }
-	public double calcularSaldo() { //regra do cálculo do saldo final
+	public double calcularSaldo() { //regra do cÃ¡lculo do saldo final
 		return 0;
 	} 
 	
