@@ -1,7 +1,7 @@
 
 public class Circulo implements AreaCalculavel { //classe pública que implementa a interface AreaCalculavel
 	
-		int raio = 10;  //atributo do círculo
+		int raio = 10;  //atributo necessário para calcular a área do do círculo
 		
 		@Override
 		public void calcularArea() { //override do método calcular área da interface.
