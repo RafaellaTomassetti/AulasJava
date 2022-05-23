@@ -1,6 +1,6 @@
 
-public class Lampada {
-	private boolean estado;
+public class Lampada { //classe p√∫blica Lampada
+	private boolean estado;  //vari√°vel booleana privada
 	
 
 	public Lampada() {
@@ -19,10 +19,10 @@ public class Lampada {
 
 	public void imprimir() {
 		if (estado == true) {
-			System.out.println("A l‚mpada est· ligada");
+			System.out.println("A l√¢mpada est√° ligada");
 			
 		} else {
-			System.out.println("A l‚mpada foi desligada");
+			System.out.println("A l√¢mpada foi desligada");
 		}
 
 	 }
