@@ -24,7 +24,7 @@ public class main {
 		
 		//CRIAÇÃO DE ENUM DENTRO DA CLASSE
 		
-		Sexo sexo = Sexo.MASCULINO;
+		Sexo sexo = Sexo.MASCULINO ;
 		sexo = Sexo.FEMININO;
 
 	
