@@ -1,13 +1,15 @@
-public class Endereco { //endere�o deve ser do tipo Object
-	String rua;
+public class Endereco { //endereço deve ser do tipo Object
+	String rua;  //atributos da classe endereço
 	int numero;
 	String bairro;
 	
+	// toString para retornar todos os atributos dos usuários
 	@Override
 	public String toString() {
-		return "Endere�o [rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + "]";
+		return "Endereço [rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + "]";
 	}
-
+	
+	//métodos getters e setters
 	public String getRua() {
 		return rua;
 	}
