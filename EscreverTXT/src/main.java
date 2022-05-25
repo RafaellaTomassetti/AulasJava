@@ -1,22 +1,35 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class main {
 
-	public static void main(String[] args) throws IOException { //lan√ßa a excess√£o 
+	public static void main(String[] args) throws IOException { //lanÁa a excess„o 
 
-		String s = "Texto para ser gravado no arquivo"; //salvar o texto em uma v√°ri√°vel do tipo string
+List<Sabonete> listaDeSabonete = new ArrayList<Sabonete>(); //fazendo uma lista da classe Sabonete 
+		
+		Sabonete sabonete = new Sabonete(" lavanda"," roxo"); //instanciando um objeto sabonete
+		listaDeSabonete.add(sabonete);
+		
+		Sabonete sabonete2 = new Sabonete(" baunilha"," amarelo"); //instanciando um objeto sabonete
+		listaDeSabonete.add(sabonete2);
+
+		
+		Sabonete sabonete3 = new Sabonete(" rosas"," rosa"); //instanciando um objeto sabonete
+		listaDeSabonete.add(sabonete3);
 		
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("saida.txt"))){ //essa linha deve estar num TRY para caso aconteca algum erro no caminho
-												//se deu errado a situa√ß√£o, ele mostra o erro 
-		//junta as informa√ß√µes e escreve onde precisa
-		//o lugar(destino) onde a informa√ß√£o ser√° inscrita √© o par√¢metro
-		//cria√ß√£o do objeto respons√°vel pela escrita
-		//se n√£o tiver o arquivo, ele cria e depois escreve
+			for (Sabonete sabonetes : listaDeSabonete) {									//se deu errado a situaÁ„o, ele mostra o erro 
+		//junta as informaÁıes e escreve onde precisa
+		//o lugar(destino) onde a informaÁ„o ser· inscrita È o par‚metro
+		//criaÁ„o do objeto respons·vel pela escrita
+		//se n„o tiver o arquivo, ele cria e depois escreve
 		
-		escrever.write(s); //write √© um m√©todo que escreve
-		//write recebe a vari√°vel que cont√©m o texto
+		escrever.write(sabonetes.toString()); //write È um mÈtodo que escreve
+		//write recebe a vari·vel que contÈm o texto
+		}
 		}
 	}
 
