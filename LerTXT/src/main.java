@@ -7,20 +7,28 @@ public class main { // lança a excessão
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 
-		try(BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))) {
+		try (BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))) {
 			String line;
-			String string = ""; //junta todas linhas em uma coisa só
-			
-			
-			//usa o while até escrever todas as linhas, pois é o laço que eu utilizo quando eu não sei a quantidade de linhas.
-			while((line = reader.readLine())!=null) { //!= significa diferente
-			//está lendo a 1 ºlinha e guarda em line, enquanto tiver conteúso, ou seja, enquanto for diferente de nulo
+			String string = ""; // junta todas linhas em uma coisa só
+
+			// usa o while até escrever todas as linhas, pois é o laço que eu utilizo quando
+			// eu não sei a quantidade de linhas.
+			while ((line = reader.readLine()) != null) { // != significa diferente
+				// está lendo a 1 ºlinha e guarda em line, enquanto tiver conteúso, ou seja,
+				// enquanto for diferente de nulo
 				string += line + "\n";
 			}
-			//quando for nulo, ou seja, quando não tiver mais conteúdo, vai mostrar na tela
+			// quando for nulo, ou seja, quando não tiver mais conteúdo, vai mostrar na tela
 			System.out.println(string);
 		}
 		
+//		Sabonete sabonete1 = new Sabonete("Azedo","Verde");
+//		String s = sobonete1.toString();
+		
+		String teste = "Sabonete: cheiro=Azedo, cor=Verde ";
+		Sabonete sabonete2 = new Sabonete(teste);
+		System.out.println(sabonete2);
+
 	}
 
 }
