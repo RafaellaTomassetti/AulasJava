@@ -25,6 +25,8 @@ public class Aplicacao {
 		else  {
 			double area = matematica.calculararea(x, y);
 			System.out.println("A área do triângulo é " + area );   //imprimir resultado da área na tela
+			int area = matematica.calculararea(x, y);
+			System.out.println("A área do retângulo é " + area );   //imprimir resultado da área na tela
 		}
 		
 
