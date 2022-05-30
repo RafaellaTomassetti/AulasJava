@@ -6,7 +6,7 @@ import java.util.List;
 
 public class main {
 
-	public static void main(String[] args) throws IOException { //lanÁa a excess„o 
+	public static void main(String[] args) throws IOException { //lan√ßa a excess√£o 
 
 List<Sabonete> listaDeSabonete = new ArrayList<Sabonete>(); //fazendo uma lista da classe Sabonete 
 		
@@ -21,14 +21,14 @@ List<Sabonete> listaDeSabonete = new ArrayList<Sabonete>(); //fazendo uma lista 
 		listaDeSabonete.add(sabonete3);
 		
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("saida.txt"))){ //essa linha deve estar num TRY para caso aconteca algum erro no caminho
-			for (Sabonete sabonetes : listaDeSabonete) {									//se deu errado a situaÁ„o, ele mostra o erro 
-		//junta as informaÁıes e escreve onde precisa
-		//o lugar(destino) onde a informaÁ„o ser· inscrita È o par‚metro
-		//criaÁ„o do objeto respons·vel pela escrita
-		//se n„o tiver o arquivo, ele cria e depois escreve
+			for (Sabonete sabonetes : listaDeSabonete) {				//se deu errado a situa√ß√£o, ele mostra o erro 
+		//junta as informa√ß√µes e escreve onde precisa
+		//o lugar(destino) onde a informa√ß√£o ser√° inscrita √© o par√¢metro
+		//cria√ß√£o do objeto respons√°vel pela escrita
+		//se n√£o tiver o arquivo, ele cria e depois escreve
 		
-		escrever.write(sabonetes.toString()); //write È um mÈtodo que escreve
-		//write recebe a vari·vel que contÈm o texto
+		escrever.write(sabonetes.toString()); //write √© um m√©todo que escreve
+		//write recebe a vari√°vel que cont√©m o texto
 		}
 		}
 	}
