@@ -1,11 +1,11 @@
 
-public class Aplicação {
+public class AplicaÃ§Ã£o {
 
 	public static void main(String[] args) {
 		
-		Rota rota = new Rota();
-		Ferrari ferrari = new Ferrari();
-		Fusca fusca = new Fusca();
+		Rota rota = new Rota();          //instanciando objeto
+		Ferrari ferrari = new Ferrari(); //instanciando objeto
+		Fusca fusca = new Fusca();       //instanciando objeto
 		
 		rota.ir(ferrari);
 		rota.ir(fusca);
