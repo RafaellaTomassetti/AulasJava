@@ -5,23 +5,23 @@ public class main {
 
 	public static void main(String[] args) {
 
-//		List lista = new ArrayList(); // como n„o temos essa classe no projeto, precisa importar
-//		// lista È uma vari·vel do tipo list
+//		List lista = new ArrayList(); // como n√£o temos essa classe no projeto, precisa importar
+//		// lista √© uma vari√°vel do tipo list
 //
 //		lista.add("abc"); // add recebe Object, ou seja, qualquer coisa
 //		lista.add(12);
 //		lista.add(true);
 //
-//		for (int x = 0; x < lista.size(); x++) { //aqui intera enquanto a condiÁ„o for verdadeira
-//			System.out.println(lista.get(x)); // o get recebe o index(Ìndice)
+//		for (int x = 0; x < lista.size(); x++) { //aqui intera enquanto a condi√ß√£o for verdadeira
+//			System.out.println(lista.get(x)); // o get recebe o index(√≠ndice)
 //
 //
 //		}
 //		
 //		System.out.println();
-//		for (Object valor : lista) { // vari·vel valor do tipo Object para receber qualquer tipo de dado
-//			//pega o valor do Ìndice 0 e aloca na vari·vel valor. Assim por diante.
-//			//varre TODOS os valores que est„o na lista
+//		for (Object valor : lista) { // vari√°vel valor do tipo Object para receber qualquer tipo de dado
+//			//pega o valor do √≠ndice 0 e aloca na vari√°vel valor. Assim por diante.
+//			//varre TODOS os valores que est√£o na lista
 //			
 //			System.out.println(valor);
 //		}
@@ -29,9 +29,9 @@ public class main {
 //
 //		//EXCLUIR ITEM DA LISTA A PARTIR DO INDEX
 //		
-//		lista.remove(0); //removendo o Ìndice 0
-//		//n„o mostra NULO, ele desvincula. … uma lista din‚mica.
-//		//ele reorganiza a lista, ou seja, j· que n„o tem mais o "abc", o '12' foi para o Ìndice 0.
+//		lista.remove(0); //removendo o √≠ndice 0
+//		//n√£o mostra NULO, ele desvincula. √â uma lista din√¢mica.
+//		//ele reorganiza a lista, ou seja, j√° que n√£o tem mais o "abc", o '12' foi para o √≠ndice 0.
 //		for (Object valor : lista) { 
 //			System.out.println(valor); //mostrando a lista atualizada
 //
@@ -39,37 +39,37 @@ public class main {
 //		
 //		System.out.println();
 //		//ADICIONANDO ITEM NA LISTA SEM APAGAR NADA
-//		lista.add(0, "def"); //adicionando "def" no Ìndice 0
-//		//agora o '12' est· na posiÁ„o 1 novamente.
+//		lista.add(0, "def"); //adicionando "def" no √≠ndice 0
+//		//agora o '12' est√° na posi√ß√£o 1 novamente.
 //		
 //		for (Object valor : lista) { 
 //			System.out.println(valor); //mostrando a lista atualizada
 //
 //		}
 //		System.out.println();
-//		// ADICIONANDO ITEM NA LISTA SUBSTITUINDO ALGO QUE J¡ EXISTE
+//		// ADICIONANDO ITEM NA LISTA SUBSTITUINDO ALGO QUE J√Å EXISTE
 //		
-//		lista.set(0, "ghi"); // substitui o que est· no Ìndice 0 por "ghi" 
-//		// agora o "ghi' est· na posiÁ„o 0, ficando no lugar de "def".
+//		lista.set(0, "ghi"); // substitui o que est√° no √≠ndice 0 por "ghi" 
+//		// agora o "ghi' est√° na posi√ß√£o 0, ficando no lugar de "def".
 //
 //		for (Object valor : lista) {
 //			System.out.println(valor); // mostrando a lista atualizada
 //		}
 //		
-//		//clear apaga tudo que est· na lista
+//		//clear apaga tudo que est√° na lista
 //		lista.clear();
-//		if(lista.isEmpty()) //teste para saber se a lista est· vazia
-//		System.out.println("Sua lista est· vazia");
+//		if(lista.isEmpty()) //teste para saber se a lista est√° vazia
+//		System.out.println("Sua lista est√° vazia");
 
-		Conta conta1 = new Conta("¡gua", 60.00);
+		Conta conta1 = new Conta("√Ågua", 60.00); //INSTANCIANDO OBJETO COM OS ATRIBUTOS
 		Conta conta2 = new Conta("Luz", 120.00);
 
-		List<Conta> listaDeContas = new ArrayList<Conta>(); // sÛ aceita os objetos do tipo Conta
+		List<Conta> listaDeContas = new ArrayList<Conta>(); // s√≥ aceita os objetos do tipo Conta
 
-		listaDeContas.add(conta1);
+		listaDeContas.add(conta1);  //adicionando o objeto na lista
 		listaDeContas.add(conta2);
 		for (Conta conta : listaDeContas) {
-			System.out.println(conta);
+			System.out.println(conta);    //imprimindo os dados na tela
 
 		}
 	}
