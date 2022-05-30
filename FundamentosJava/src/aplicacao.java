@@ -24,14 +24,14 @@ public class aplicacao {
 //
 //		int idadePessoa = 25;
 //
-//		if (idadePessoa < 20) {         //condição lógica
-//			System.out.println("Você não pode beber");
+//		if (idadePessoa < 20) {         //condiÃ§Ã£o lÃ³gica
+//			System.out.println("VocÃª nÃ£o pode beber");
 //		} else if (idadePessoa < 80) {
 //			System.out.println("Bora tomar uma");
 //		} else {
-//			System.out.println("Quanto é a sua aposentadoria?");
+//			System.out.println("Quanto Ã© a sua aposentadoria?");
 //		}
-//		System.out.println("Você tem " + idadePessoa);
+//		System.out.println("VocÃª tem " + idadePessoa);
 
 		// System.out.println(-------------------------------------------);
 		
@@ -39,12 +39,12 @@ public class aplicacao {
 
 //		int num = 9;
 //
-//		switch (num) {  //switch case usado para TESTAR o conteúdo da variável, quando os valores são CONSTANTES
+//		switch (num) {  //switch case usado para TESTAR o conteÃºdo da variÃ¡vel, quando os valores sÃ£o CONSTANTES
 //		case 1:
 //			System.out.println("Segunda " );
-//			break;                           //BREAK é usado pois, se não for, tudo que está depois da verificação será executado
+//			break;                           //BREAK Ã© usado pois, se nÃ£o for, tudo que estÃ¡ depois da verificaÃ§Ã£o serÃ¡ executado
 //		case 2:
-//			System.out.println("Terça" );
+//			System.out.println("TerÃ§a" );
 //			break;
 //		case 3:
 //			System.out.println("Quarta " );
@@ -56,13 +56,13 @@ public class aplicacao {
 //			System.out.println("Sexta " );
 //			break;
 //		case 6:
-//			System.out.println("Sábado " );
+//			System.out.println("SÃ¡bado " );
 //			break;
 //		case 7:
 //			System.out.println("Domingo" );
 //			break;
-//			default:                       //se nenhum dos casos for verdadeiro, aparecerá o que está no default
-//				System.out.println("Esse número não representa um dia da semana");
+//			default:                       //se nenhum dos casos for verdadeiro, aparecerÃ¡ o que estÃ¡ no default
+//				System.out.println("Esse nÃºmero nÃ£o representa um dia da semana");
 
 		// }
 		// System.out.println(------------------------------------------);
@@ -70,7 +70,7 @@ public class aplicacao {
 		// *********** WHILE DO *************
 		
 //		int x = 8;
-//		while (x<10) {               //enquanto x for menor que 8, é para ser executado o programa
+//		while (x<10) {               //enquanto x for menor que 8, Ã© para ser executado o programa
 //			System.out.println(x);
 //			x = x + 1;
 //		
@@ -79,19 +79,19 @@ public class aplicacao {
 //	int x=10;
 //		
 //		do {
-//			System.out.println(x);      //x aparecerá na tela enquanto ele for menor que 15
+//			System.out.println(x);      //x aparecerÃ¡ na tela enquanto ele for menor que 15
 //		x=x+1;
 //	}while(x<15); 
 
 		// ************ TABUADA (FOR) **************
-//Scanner ler = new Scanner(System.in); //scanner para receber informação do usuário
-//System.out.println("Qual número deseja realizar a tabuada?");
+//Scanner ler = new Scanner(System.in); //scanner para receber informaÃ§Ã£o do usuÃ¡rio
+//System.out.println("Qual nÃºmero deseja realizar a tabuada?");
 //
 //int y;
 //
-//y = ler.nextInt();            //lendo informação do usuário
+//y = ler.nextInt();            //lendo informaÃ§Ã£o do usuÃ¡rio
 //
-//	for(int x=0;  x<11; x++) {  // X iniciará em 0 e somará 1 (++) até o x sendo menor que 11.
+//	for(int x=0;  x<11; x++) {  // X iniciarÃ¡ em 0 e somarÃ¡ 1 (++) atÃ© o x sendo menor que 11.
 //		System.out.println(y + "x" + x + "= " + x*y);
 //		
 //
@@ -101,88 +101,90 @@ public class aplicacao {
 //		int y1 = 4;
 //		int z1 = 5;
 //
-//		System.out.println(x1); // sem as matrizes teríamos que fazer vários Sysos
+//		System.out.println(x1); // sem as matrizes terÃ­amos que fazer vÃ¡rios Sysos
 //		System.out.println(y1);
 //		System.out.println(z1);
 //		System.out.println();
 //
-//		double x[] = { 3, 4, 5, 6 }; // já está determinando que a matriz tem 4 espaços(length).
-//		// java entende que um objeto está sendo construído.
+//		double x[] = { 3, 4, 5, 6 }; // jÃ¡ estÃ¡ determinando que a matriz tem 4 espaÃ§os(length).
+//		// java entende que um objeto estÃ¡ sendo construÃ­do.
 //
-//		for (int aux = 0; aux < x.length; aux++) { // o programa vai executar até o auxiliar(aux) ser menor que a
-//													// quantidade de índices(4 nesse caso).
+//		for (int aux = 0; aux < x.length; aux++) { // o programa vai executar atÃ© o auxiliar(aux) ser menor que a
+//													// quantidade de Ã­ndices(4 nesse caso).
 //
 //			
-//			System.out.println("Valor do índice " + aux + " = " + x[aux]);  //x[aux] será substituída pelo conteúdo
+//			System.out.println("Valor do Ã­ndice " + aux + " = " + x[aux]);  //x[aux] serÃ¡ substituÃ­da pelo conteÃºdo
 //
 //		}
 //		System.out.println();
 //
-//		String nome[] = { "Rafael", "Gislene", "Lara" }; // já está determinando que a matriz tem 3 espaços
+//		String nome[] = { "Rafael", "Gislene", "Lara" }; // jÃ¡ estÃ¡ determinando que a matriz tem 3 espaÃ§os
 //
-//		for (int aux1 = 0; aux1 < nome.length; aux1++) { // o programa vai executar até o auxiliar(aux) ser menor que a
-//															// quantidade de índices(3 nesse caso).
+//		for (int aux1 = 0; aux1 < nome.length; aux1++) { // o programa vai executar atÃ© o auxiliar(aux) ser menor que a
+//								// quantidade de Ã­ndices(3 nesse caso).
 //			System.out.println(nome[aux1]);
 //
-//			if (nome[aux1] == "Gislene") { // condição para descobrir em qual índice "Gislene" está alocado
-//				System.out.println("O índice de Gislene é " + aux1);
+//			if (nome[aux1] == "Gislene") { // condiÃ§Ã£o para descobrir em qual Ã­ndice "Gislene" estÃ¡ alocado
+//				System.out.println("O Ã­ndice de Gislene Ã© " + aux1);
 //
 //			}
 //
 //		}
 //		System.out.println();
-//		int[] arrayInt = new int[5]; // instância de um objeto de Matriz. Define que os objetos recebem inteiros
+//		int[] arrayInt = new int[5]; // instÃ¢ncia de um objeto de Matriz. Define que os objetos recebem inteiros
 //		
 //		String[] ArrayString = new String[4];
 //		double[] ArrayDouble = new double[4];
 //
-//		arrayInt[3] = 4; // na posição 3, o número quatro está sendo alocado.
+//		arrayInt[3] = 4; // na posiÃ§Ã£o 3, o nÃºmero quatro estÃ¡ sendo alocado.
 //
-//		int[] numero = new int[6];  //variável número recebe 6 posições(de 0 a 5)
+//		int[] numero = new int[6];  //variÃ¡vel nÃºmero recebe 6 posiÃ§Ãµes(de 0 a 5)
 //		
-//		Scanner teclado = new Scanner(System.in); // scanner para receber informação do usuário
+//		Scanner teclado = new Scanner(System.in); // scanner para receber informaÃ§Ã£o do usuÃ¡rio
 //
-//		for (int aux2 = 0; aux2 < numero.length; aux2++) { // o programa vai executar até o auxiliar(aux) ser menor que
-//															// a quantidade de posições da matriz(6 nesse caso).
-//			System.out.println("Digite um número qualquer:");
+//		for (int aux2 = 0; aux2 < numero.length; aux2++) { // o programa vai executar atÃ© o auxiliar(aux) ser menor que
+//															// a quantidade de posiÃ§Ãµes da matriz(6 nesse caso).
+//			System.out.println("Digite um nÃºmero qualquer:");
 //			numero[aux2] = teclado.nextInt();   ;;
 //
 //		}
 //
 //		for (int aux2 = 0; aux2 < numero.length; aux2++) {
-//			System.out.println("índice " + aux2 + " = " + numero[aux2]); // vai mostrar qual é o valor alocado em cada
-//																			// índice
+//			System.out.println("Ã­ndice " + aux2 + " = " + numero[aux2]); // vai mostrar qual Ã© o valor alocado em cada
+//																			// Ã­ndice
 //		}
 		
 		int[] arrayQualquer = new int[3];
 		
 		Object[] arrayObject = new Object[5]; //matriz do tipo objeto consegue receber qualquer coisa
 		
-		arrayObject[0] = 12; //a matriz receberá 12 na posição 0
+		arrayObject[0] = 12; //a matriz receberÃ¡ 12 na posiÃ§Ã£o 0
 		arrayObject[1] = "Rafaella"; //recebendo String
 		arrayObject[2] = 8.7; //recebendo double
 		arrayObject[3] = true; //recebendo boolean
 		arrayObject[4] = arrayQualquer; //uma array dentro de outra
 
 		for (int aux2 = 0; aux2 < arrayObject.length; aux2++) { 
-			System.out.println("índice " + aux2 + " = " + arrayObject[aux2]);
+			System.out.println("Ã­ndice " + aux2 + " = " + arrayObject[aux2]);
 			
 		}	
 		
 		//***********MATRIZ BIDIRECIONAL(COM LINHAS E COLUNAS)************
 			
-			int[][] arrayBidirecional = new int[4][3];
-			arrayBidirecional[0][0] = 4;
+			int[][] arrayBidirecional = new int[4][3]; //arrayBidirecional Ã© o nome da matriz
+			//[4] Ã© o nÃºmero de linhas e [3] Ã© o nÃºmero de colunas
+			arrayBidirecional[0][0] = 4;  //adicionando valor para cada linha e coluna
 			arrayBidirecional[2][1] = 8;
 
 			
 			for (int linha = 0; linha < arrayBidirecional.length; linha++) { 
 			
-				for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) { 
-					System.out.print("  Índice [" + linha + "] ["+ coluna+"] = " + arrayBidirecional [linha][coluna] + " " );
-				}
+				for (int coluna = 0; coluna < arrayBidirecional[0].length; coluna++) {  // o programa vai executar atÃ© o auxiliar(aux) ser menor que a
+//													// quantidade de Ã­ndices
+					System.out.print("  Ãndice [" + linha + "] ["+ coluna+"] = " + arrayBidirecional [linha][coluna] + " " );
+				}  //mostrar na tela os valores alocados na matriz
 			
-				System.out.println();
+				System.out.println();  //pular linha
 			}
 		
 	}
