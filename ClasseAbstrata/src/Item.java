@@ -1,5 +1,5 @@
 
-public abstract class Item { //classe abstrata
+public abstract class Item { //classe abstrata não cria objetos e nem tem IMPLEMENTAÇÃO DE CÓDIGO
 	
 	private int posicaoX = 1;  //atributos privados
 	private int posicaoY = 1;
