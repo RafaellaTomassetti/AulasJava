@@ -1,6 +1,6 @@
 
-public class Conta {
-	String nome;
+public class Conta { //classe pública
+	String nome; //atributos da classe
 	double valor;
 
 	@Override
