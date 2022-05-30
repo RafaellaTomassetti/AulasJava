@@ -3,31 +3,33 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-public class main { // lanÁa a excess„o
+public class main { 
 
-	public static void main(String[] args) throws FileNotFoundException, IOException {
+	public static void main(String[] args) throws FileNotFoundException, IOException { // lan√ßa a excess√£o
 
-		try (BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))) {
+		//Buffer √© uma mem√≥ria tempor√°ria que pode ler ou escrever 
+		//o try verifica se a a√ß√£o ser√° realizada completamente
+		try (BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))) { 
 			String line;
-			String string = ""; // junta todas linhas em uma coisa sÛ
+			String string = ""; // junta todas linhas em uma coisa s√≥
 
-			// usa o while atÈ escrever todas as linhas, pois È o laÁo que eu utilizo quando
-			// eu n„o sei a quantidade de linhas.
+			// usa o while at√© escrever todas as linhas, pois √© o la√ßo que eu utilizo quando
+			// eu n√£o sei a quantidade de linhas.
 			while ((line = reader.readLine()) != null) { // != significa diferente
-				// est· lendo a 1 ∫linha e guarda em line, enquanto tiver conte˙so, ou seja,
+				// est√° lendo a 1 ¬∫linha e guarda em line, enquanto tiver conte√∫so, ou seja,
 				// enquanto for diferente de nulo
 				string += line + "\n";
 			}
-			// quando for nulo, ou seja, quando n„o tiver mais conte˙do, vai mostrar na tela
+			// quando for nulo, ou seja, quando n√£o tiver mais conte√∫do, vai mostrar na tela
 			System.out.println(string);
 		}
 		
 //		Sabonete sabonete1 = new Sabonete("Azedo","Verde");
 //		String s = sobonete1.toString();
 		
-		String teste = "Sabonete: cheiro=Azedo, cor=Verde ";
-		Sabonete sabonete2 = new Sabonete(teste);
-		System.out.println(sabonete2);
+		String teste = "Sabonete: cheiro=Azedo, cor=Verde ";  //criando vari√°vel
+		Sabonete sabonete2 = new Sabonete(teste);   //instanciando objeto
+		System.out.println(sabonete2);           //imprimindo na tela o objeto
 
 	}
 
