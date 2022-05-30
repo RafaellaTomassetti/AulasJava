@@ -1,7 +1,7 @@
 
 public interface AreaCalculavel {
-//interface n�o tem atributos
+//interface não tem atributos, não pode implementar e nem instanciar objetos
 	
-	public void calcularArea();
+	public void calcularArea(); //só pode colocar as assinaturas dos métodos
 	
 }
