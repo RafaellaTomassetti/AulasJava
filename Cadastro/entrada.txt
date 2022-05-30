@@ -1,0 +1,1 @@
+Usuario [nome=1, idade=1, endereco=Endereço [rua=1, numero=1, bairro=1], sexo=F]Usuario [nome=2, idade=2, endereco=Endereço [rua=2, numero=2, bairro=2], sexo=M]Usuario [nome=3, idade=3, endereco=Endereço [rua=3, numero=3, bairro=3], sexo=F]Usuario [nome=3, idade=4, endereco=Endereço [rua=4, numero=4, bairro=4], sexo=F]

@@ -6,13 +6,20 @@ public class Usuario {
 	Sexo sexo;
 
 	@Override
-	
-	
 	public String toString() {
 			return "Usuario [nome=" + nome + ", idade=" + idade + ", endereco=" + endereco + ", sexo=" + sexo + "]";
 
 	}
+	public Usuario(String texto) {
+		String[] arrayAuxiliar1 = texto.split(",");
+		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("=");
+		this.nome = arrayAuxiliar2[1].trim();
 
+	}
+
+	public Usuario() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getNome() {
 		return nome;
 	}
