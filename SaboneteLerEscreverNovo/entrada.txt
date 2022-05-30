@@ -1,0 +1,3 @@
+Sabonete: cheiro= lavanda, cor= roxo
+Sabonete: cheiro= baunilha, cor= amarelo
+Sabonete: cheiro= rosas, cor= rosa
