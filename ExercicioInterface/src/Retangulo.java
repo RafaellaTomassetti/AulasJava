@@ -9,7 +9,7 @@ public class Retangulo implements AreaCalculavel { //classe pública que impleme
 		
 		int area;   //variável criada para guardar o valor da área
 		area = base*altura;    //fórmula para cálculo da área do quadrado
-		System.out.println("A área do retângulo é " + area + " cm2");
+		System.out.println("A área do retângulo é " + area + " cm2");  //mostrar na tela o resultado da área
 
 	}
 
