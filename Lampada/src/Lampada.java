@@ -7,7 +7,7 @@ public class Lampada { //classe pública Lampada
 		this.estado = true;
 	}
 
-	public void ligar() {
+	public void ligar() {   //método ligar tem um retorno verdadeiro
 		estado = true;
 
 	}
