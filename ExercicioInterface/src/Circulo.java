@@ -11,7 +11,7 @@ public class Circulo implements AreaCalculavel { //classe pública que implement
 			area = Math.PI*Math.pow(2, raio); //classe math que possiu várias funcionalidades matemáticas
 			//classe Math é estática, ou seja, não precisa criar objetos para acessar seus métodos
 			
-			System.out.println("A área do círculo é " + area + " cm2");
+			System.out.println("A área do círculo é " + area + " cm2"); //mostrar na tela o resultado da área
 
 		}
 
