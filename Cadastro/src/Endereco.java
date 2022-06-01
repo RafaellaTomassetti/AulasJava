@@ -1,15 +1,11 @@
-public class Endereco { //endereço deve ser do tipo Object
+public class Endereco { //endere�o deve ser do tipo Object
 	String rua;  //atributos da classe endereço
 	int numero;
 	String bairro;
 	
-	// toString para retornar todos os atributos dos usuários
-	@Override
-	public String toString() {
-		return "Endereço [rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + "]";
-	}
 	
-	//métodos getters e setters
+	
+	//m�todos getters e setters
 	public String getRua() {
 		return rua;
 	}
@@ -34,7 +30,29 @@ public class Endereco { //endereço deve ser do tipo Object
 		this.bairro = bairro;
 	}
 	
-		
-	
+	// toString para retornar todos os atributos dos usuários
+		@Override
+		public String toString() {
+			return rua + ", numero=" + numero + ", bairro=" + bairro ;
+		}
+
+		public Endereco(String[] arrayLinha) {
+			
+			String[] arrayAuxiliar2 = arrayLinha[2].split("=");
+			this.rua = arrayAuxiliar2[1].trim();
+
+			String[] arrayAuxiliar3 = arrayLinha[3].split("=");
+			this.numero = Integer.parseInt(arrayAuxiliar3[1].trim());
+
+			String[] arrayAuxiliar4 = arrayLinha[4].split("=");
+			this.bairro = arrayAuxiliar4[1].trim();
+
+		}
+
+		public Endereco() {
+			
+		}
+
+
 
 }

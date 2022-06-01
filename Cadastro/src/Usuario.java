@@ -5,15 +5,27 @@ public class Usuario {
 	Endereco endereco;
 	Sexo sexo;
 
+	// toString para retornar todos os atributos dos sabonetes
 	@Override
 	public String toString() {
-			return "Usuario [nome=" + nome + ", idade=" + idade + ", endereco=" + endereco + ", sexo=" + sexo + "]";
+			return "Usuario nome=" + nome + ", idade=" + idade + ", Endereço: rua =" + endereco + ", sexo=" + sexo + "\n";
 
 	}
 	public Usuario(String texto) {
-		String[] arrayAuxiliar1 = texto.split(",");
-		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("=");
-		this.nome = arrayAuxiliar2[1].trim();
+		String[] arrayLinha = texto.split(","); //split usado para dividir o toString a cada vírgula que aparecer
+		String[] arrayNome = arrayLinha[0].split("="); 
+		this.nome =  arrayNome[1].trim();
+		//cria uma nova variável para pegar a posição 0 da arrayAuxiliar1 e dividir quando aparecer o "="
+
+		String [] arrayAuxiliar3 = arrayLinha[1].split("=");
+		this.idade = Integer.parseInt(arrayAuxiliar3[1].trim());  //converte a string da Array em inteiro com o Integer.parseInt
+
+		
+		String [] arrayAuxiliar4 = arrayLinha[5].split("=");
+		this.sexo = Sexo.valueOf(arrayAuxiliar4[1].trim());
+		
+		Endereco endereco = new Endereco(arrayLinha);
+		this.endereco = endereco;
 
 	}
 
