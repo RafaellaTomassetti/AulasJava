@@ -1,105 +1,106 @@
-import java.io.BufferedReader;
+//importando os Buffers, File, exceptions, ArrayList e Scanner
+import java.io.BufferedReader;  
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner; //Importando a classe Scanner para receber informaÁ„o do usu·rio
+import java.util.Scanner; //Importando a classe Scanner para receber informa√ß√£o do usu√°rio
 
-public class main {
+public class main { //classe main para executar o programa 
 
 	public static void main(String[] args) throws IOException {
 
-		List<Usuario> listaDeUsuario = new ArrayList<Usuario>();
+		List<Usuario> listaDeUsuario = new ArrayList<Usuario>();  //criando uma lista de usu√°rio da classe Usu√°rio
+		//os usu√°rios recebidos pelo scanner ser√£o salvos nessa lista
 		Scanner scanner = new Scanner(System.in); // Instanciar e criar um objeto Scanner
 
-		for (int x = 1; x <= 2; x++) {
+		for (int x = 1; x <= 2; x++) {  //for para limitar a quantidade de usu√°rios cadastrados
 
 			Usuario usuario = new Usuario(); // Instanciar e criar um objeto usuario:
-			usuario.endereco = new Endereco();
+			usuario.endereco = new Endereco(); 
 
-			System.out.println("Digite o nome do usu·rio " + x); // imprimir informaÁ„o na tela
+			System.out.println("Digite o nome do usu√°rio " + x); // imprimir informa√ß√£o na tela
 
-			usuario.setNome(scanner.next());
+			usuario.setNome(scanner.next());  //usando o set para salvar o que usu√°rio digitou na vari√°vel
 
-			System.out.println("Digite a idadedo usu·rio " + x); // imprimir informaÁ„o na tela
+			System.out.println("Digite a idadedo usu√°rio " + x); // imprimir informa√ß√£o na tela
 
-			usuario.idade = scanner.nextInt();
+			usuario.idade = scanner.nextInt();  //salvando o que o usu√°rio digitou na vari√°vel 
 
-			System.out.println("Digite O SEXO do usu·rio " + x + " : 1 para feminino e 2 para masculino:"); 
+			System.out.println("Digite O SEXO do usu√°rio " + x + " : 1 para feminino e 2 para masculino:"); 
 			int sexo = 0; // sexo vai entrar com o valor 0
 
-			while (sexo != 1 && sexo != 2) { // o sexo entra pois È diferente de 1 e 2
+			while (sexo != 1 && sexo != 2) { // o sexo entra pois √© diferente de 1 e 2
 				// && = e
 				// while usado para testar e depois executar
 				sexo = scanner.nextInt();
-				if (sexo == 1) { // condiÁ„o lÛgica
+				if (sexo == 1) { // condi√ß√£o l√≥gica
 
-					usuario.setSexo(Sexo.FEMININO); // usa o set para adicionar o atributo na vari·vel
+					usuario.setSexo(Sexo.FEMININO); // usa o set para adicionar o atributo na vari√°vel
+					// se o usu√°rio digitar 1, o sexo ser¬¥salvo como FEMININO
 
-				} else if (sexo == 2) { // usa o set para adicionar o atributo na vari·vel
+				} else if (sexo == 2) { // usa o set para adicionar o atributo na vari√°vel
 
-					usuario.setSexo(Sexo.MASCULINO);
+					usuario.setSexo(Sexo.MASCULINO); // usa o set para adicionar o atributo na vari√°vel
+					// se o usu√°rio digitar 1, o sexo ser¬¥salvo como FEMININO
 
 				} else {
-					System.out.println("Esse valor n„o representa um sexo");
+					System.out.println("Esse valor n√£o representa um sexo");
 					System.out.println("Digite O SEXO: 1 para feminino e 2 para masculino:");
-					// enquanto o usu·rio digitar algo diferente de 1 e 2, vai pedir para digitar o
+					// enquanto o usu√°rio digitar algo diferente de 1 e 2, vai pedir para digitar o
 					// sexo novamente
 				}
 			}
 
-			System.out.println("Digite a rua do usu·rio " + x); // imprimir informaÁ„o na tela
+			System.out.println("Digite a rua do usu√°rio " + x); // imprimir informa√ß√£o na tela
 
-			usuario.endereco.rua = scanner.next();
+			usuario.endereco.rua = scanner.next(); 
 
-			System.out.println("Digite o n˙mero da casa do usu·rio " + x); // imprimir informaÁ„o na tela
+			System.out.println("Digite o n√∫mero da casa do usu√°rio " + x); // imprimir informa√ß√£o na tela
 
-			usuario.endereco.numero = scanner.nextInt();
+			usuario.endereco.numero = scanner.nextInt(); 
 
-			System.out.println("Digite o bairro do usu·rio " + x); // imprimir informaÁ„o na tela
+			System.out.println("Digite o bairro do usu√°rio " + x); // imprimir informa√ß√£o na tela
 
 			usuario.endereco.bairro = scanner.next();
 
-			listaDeUsuario.add(usuario);
+			listaDeUsuario.add(usuario); //adicionando as informa√ß√µes dos usu√°rios na lista
 
 		}
-
+		//Buffer √© uma mem√≥ria tempor√°ria que pode ler ou escrever 
+		//o try verifica se a a√ß√£o ser√° realizada completamente
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("entrada.txt"))) { // essa linha deve estar num
-			// TRY para caso aconteÁa algum erro no caminho
-			for (Usuario usuario : listaDeUsuario) { // se deu errado a situaÁ„o, ele mostra o erro
-				// junta as informaÁıes e escreve onde precisa
-				// o lugar(destino) onde a informaÁ„o ser· inscrita È o par‚metro
-				// criaÁ„o do objeto respons·vel pela escrita
-				// se n„o tiver o arquivo, ele cria e depois escreve
+			// TRY para caso aconte√ßa algum erro no caminho - se deu errado a situa√ß√£o, ele mostra o erro
+			// o lugar(destino) onde a informa√ß√£o ser√° inscrita √© o par√¢metro. Nesse caso √© o entrada.txt
+			// cria√ß√£o do objeto respons√°vel pela escrita
+			// se n√£o tiver o arquivo, ele cria e depois escreve
+			
+			for (Usuario usuario : listaDeUsuario) {  //para a lista de usu√°rio, vai escrever a informa√ß√£o no txt
 
-				escrever.write(usuario.toString()); // write È um mÈtodo que escreve
-				// write recebe a vari·vel que contÈm o texto
+				escrever.write(usuario.toString()); // write √© um m√©todo que escreve
+				// write recebe a vari√°vel que cont√©m o texto
 			}
 		}
-		List<Usuario> listaDeUsuariosLidos = new ArrayList<Usuario>(); // fazendo uma lista da classe Sabonete
+		List<Usuario> listaDeUsuariosLidos = new ArrayList<Usuario>(); // fazendo uma lista de usu√°rios lidos da classe Usuario 
 		try (BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))) {
 			String line;
 
-			// usa o while atÈ escrever todas as linhas, pois È o laÁo que eu utilizo quando
-			// eu n„o sei a quantidade de linhas.
+			// usa o while at√© escrever todas as linhas, pois √© o la√ßo que eu utilizo quando
+			// eu n√£o sei a quantidade de linhas.
 			while ((line = reader.readLine()) != null) { // != significa diferente
-				// est· lendo a 1∫ linha e guarda em line, enquanto tiver conte˙so, ou seja,
+				// est√° lendo a 1¬∫ linha e guarda em line, enquanto tiver conte√∫so, ou seja,
 				// enquanto for diferente de nulo
 
-				Usuario usuarios = new Usuario(line);
+				Usuario usuarios = new Usuario(line);  //criando objeto que recebe a string Line que leu toda a informa√ß√£o
 				
-				listaDeUsuariosLidos.add(usuarios);
+				listaDeUsuariosLidos.add(usuarios);  //adicionando a nova vari√°vel que possui a informa√ß√£o lida na lista de usu√°rios lidos
 
 			}
 		}
 
-		for (Usuario UsuarioLido : listaDeUsuariosLidos) { // se deu errado a situaÁ„o, ele mostra o erro
-			// junta as informaÁıes e escreve onde precisa
-			// o lugar(destino) onde a informaÁ„o ser· inscrita È o par‚metro
-			// criaÁ„o do objeto respons·vel pela escrita
-			// se n„o tiver o arquivo, ele cria e depois escreve
+		for (Usuario UsuarioLido : listaDeUsuariosLidos) { //para a lista de usu√°rios lidos, vai escrever a inform√ß√£o na tela
 
 			System.out.print(UsuarioLido.toString());
 
