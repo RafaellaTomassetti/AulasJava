@@ -8,45 +8,48 @@ import java.util.List;
 
 public class main {
 
-	public static void main(String[] args) throws IOException { // lanÁa a excess„o
+	public static void main(String[] args) throws IOException { // lan√ßa a excess√£o
 
 		List<Sabonete> listaDeSabonete = new ArrayList<Sabonete>(); // fazendo uma lista da classe Sabonete
 
-		Sabonete sabonete = new Sabonete(" lavanda", " roxo"); // instanciando um objeto sabonete
-		listaDeSabonete.add(sabonete);
+		Sabonete sabonete = new Sabonete(" lavanda", " roxo"); // instanciando um objeto sabonete com os par√¢metros
+		listaDeSabonete.add(sabonete); //adicionando as informa√ß√µes do sabonete na lista
 
-		Sabonete sabonete2 = new Sabonete(" baunilha", " amarelo"); // instanciando um objeto sabonete
+		Sabonete sabonete2 = new Sabonete(" baunilha", " amarelo"); // instanciando um objeto sabonete com os par√¢metros
 		listaDeSabonete.add(sabonete2);
 
-		Sabonete sabonete3 = new Sabonete(" rosas", " rosa"); // instanciando um objeto sabonete
+		Sabonete sabonete3 = new Sabonete(" rosas", " rosa"); // instanciando um objeto sabonete com os par√¢metros
 		listaDeSabonete.add(sabonete3);
-
+		
+		//Buffer √© uma mem√≥ria tempor√°ria que pode ler ou escrever 
+		//o try verifica se a a√ß√£o ser√° realizada completamente
 		try (BufferedWriter escrever = new BufferedWriter(new FileWriter("entrada.txt"))) { // essa linha deve estar num
-																							// TRY para caso aconteca
+			// TRY para caso aconte√ßa algum erro no caminho - se deu errado a situa√ß√£o, ele mostra o erro
+				// junta as informa√ß√µes e escreve onde precisa
+				// o lugar(destino) onde a informa√ß√£o ser√° inscrita √© o par√¢metro(nesse caso √© entrada.txt )
+				// cria√ß√£o do objeto respons√°vel pela escrita
+				// se n√£o tiver o arquivo, ele cria e depois escreve																				// TRY para caso aconteca
 																							// algum erro no caminho
-			for (Sabonete sabonetes : listaDeSabonete) { // se deu errado a situaÁ„o, ele mostra o erro
-				// junta as informaÁıes e escreve onde precisa
-				// o lugar(destino) onde a informaÁ„o ser· inscrita È o par‚metro
-				// criaÁ„o do objeto respons·vel pela escrita
-				// se n„o tiver o arquivo, ele cria e depois escreve
+			for (Sabonete sabonetes : listaDeSabonete) {  //para a lista de sabonete, vai escrever a informa√ß√£o no txt
 
-				escrever.write(sabonetes.toString()); // write È um mÈtodo que escreve
-				// write recebe a vari·vel que contÈm o texto
+				escrever.write(sabonetes.toString()); // write √© um m√©todo que escreve
+				// write recebe a vari√°vel que cont√©m o texto
 			}
 		}
-		List<Sabonete> listaDeSabonetesLidos = new ArrayList<Sabonete>(); // fazendo uma lista da classe Sabonete
+		List<Sabonete> listaDeSabonetesLidos = new ArrayList<Sabonete>(); // fazendo uma lista de sabonetes lidos da classe Sabonete
+		//Buffer para ler a lista de sabonetes
 		try (BufferedReader reader = new BufferedReader(new FileReader("entrada.txt"))) {
 			String line;
-			String string = ""; // junta todas linhas em uma coisa sÛ
+			String string = ""; // junta todas linhas em uma coisa s√≥
 
-			// usa o while atÈ escrever todas as linhas, pois È o laÁo que eu utilizo quando
-			// eu n„o sei a quantidade de linhas.
+			// usa o while at√© escrever todas as linhas, pois √© o la√ßo que eu utilizo quando
+			// eu n√£o sei a quantidade de linhas.
 			while ((line = reader.readLine()) != null) { // != significa diferente
-				// est· lendo a 1 ∫linha e guarda em line, enquanto tiver conte˙so, ou seja,
+				// est√° lendo a 1 ¬∫linha e guarda em line, enquanto tiver conte√∫so, ou seja,
 				// enquanto for diferente de nulo
 
-				Sabonete sabonete1 = new Sabonete(line);
-				listaDeSabonetesLidos.add(sabonete1);
+				Sabonete sabonete1 = new Sabonete(line); //criando objeto que recebe a string Line que leu toda a informa√ß√£o
+				listaDeSabonetesLidos.add(sabonete1); //adicionando a nova vari√°vel que possui a informa√ß√£o lida na lista de sabonetes lidos
 
 			}
 		}
