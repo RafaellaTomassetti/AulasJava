@@ -1,6 +1,6 @@
 
-public class Usuario {
-	private String nome;
+public class Usuario { //classe p√∫blica usu√°rio
+	String nome;
 	int idade;
 	Endereco endereco;
 	Sexo sexo;
@@ -8,14 +8,14 @@ public class Usuario {
 	// toString para retornar todos os atributos dos sabonetes
 	@Override
 	public String toString() {
-			return "Usuario nome=" + nome + ", idade=" + idade + ", EndereÁo: rua =" + endereco + ", sexo=" + sexo + "\n";
+			return "Usuario nome=" + nome + ", idade=" + idade + ", Endere√ßo: rua =" + endereco + ", sexo=" + sexo + "\n";
 
 	}
 	public Usuario(String texto) {
-		String[] arrayLinha = texto.split(","); //split usado para dividir o toString a cada vÌrgula que aparecer
+		String[] arrayLinha = texto.split(","); //split usado para dividir o toString a cada v√≠rgula que aparecer
 		String[] arrayNome = arrayLinha[0].split("="); 
 		this.nome =  arrayNome[1].trim();
-		//cria uma nova vari·vel para pegar a posiÁ„o 0 da arrayAuxiliar1 e dividir quando aparecer o "="
+		//cria uma nova vari√°vel para pegar a posi√ß√£o 0 da arrayAuxiliar1 e dividir quando aparecer o "="
 
 		String [] arrayAuxiliar3 = arrayLinha[1].split("=");
 		this.idade = Integer.parseInt(arrayAuxiliar3[1].trim());  //converte a string da Array em inteiro com o Integer.parseInt
