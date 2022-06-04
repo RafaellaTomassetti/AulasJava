@@ -1,6 +1,6 @@
 
 public class Cliente {  //classe pública
-	String nome;    //atributos priavdos do Cliente
+	String nome;    //atributos do Cliente
 	int conta;
 	Pix pix; 
 	Double valor;
@@ -19,8 +19,8 @@ public class Cliente {  //classe pública
 
 		} else {
 			System.out.println("Você tem valor suficientes para transferir para " + cliente.nome);
-			this.valor -= valor;
-			cliente.receber(valor);
+			this.valor -= valor;  //subtrai um valor do saldo inicial
+			cliente.receber(valor);  
 			return true; // retorno booleano
 		}
 
