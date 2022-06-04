@@ -1,11 +1,11 @@
-public class Endereco { //endere�o deve ser do tipo Object
+public class Endereco { //endereço deve ser do tipo Object
 	String rua;  //atributos da classe endereço
 	int numero;
 	String bairro;
 	
 	
 	
-	//m�todos getters e setters
+	//métodos getters e setters
 	public String getRua() {
 		return rua;
 	}
@@ -30,7 +30,7 @@ public class Endereco { //endere�o deve ser do tipo Object
 		this.bairro = bairro;
 	}
 	
-	// toString para retornar todos os atributos dos usuários
+	// toString para retornar todos os atributos dos usuÃ¡rios
 		@Override
 		public String toString() {
 			return rua + ", numero=" + numero + ", bairro=" + bairro ;
