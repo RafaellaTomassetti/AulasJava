@@ -1,3 +1,4 @@
+//importando os Buffers, File, exceptions, ArrayList e Scanner
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
