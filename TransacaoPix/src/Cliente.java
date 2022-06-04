@@ -20,7 +20,7 @@ public class Cliente {  //classe pública
 		} else {
 			System.out.println("Você tem valor suficientes para transferir para " + cliente.nome);
 			this.valor -= valor;  //subtrai um valor do saldo inicial
-			cliente.receber(valor);  
+			cliente.receber(valor);  // o dinheiro que saiu da conta foi para um outro cliente 
 			return true; // retorno booleano
 		}
 
