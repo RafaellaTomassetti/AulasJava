@@ -1,11 +1,13 @@
 
 public class Constante {
-//ninguÈm consegue mud·-lo, mesmo com a visibilidade p˙blica
+//ningu√©m consegue mud√°-lo, mesmo com a visibilidade p√∫blica
 	
 	public static final double MEDIA_DA_PROVA;
 	
+	//static n√£o precisa criar objetos pra acessar os m√©todos
+	
 	static {
-		MEDIA_DA_PROVA = 7.0;
+		MEDIA_DA_PROVA = 7.0; //definindo uma constante
 	}
 	
 	
