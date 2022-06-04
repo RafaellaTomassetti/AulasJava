@@ -1,7 +1,7 @@
 
 public class Aplicacao {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {  //main para executar o programa
 
 //	    Matematica matematica = new Matematica();
 
@@ -11,8 +11,11 @@ public class Aplicacao {
 //		resultado = matematica.subtrair(10, 4);
 //		System.out.println(resultado);
 //		
-		int resultado = Matematica.somar(200, 78);  //como os m�todos s�o est�ticos, n�o preciso instanciar um objeto
-		System.out.println(resultado);
+		int resultado = Matematica.somar(200, 78);  //como os métodos são estáticos, não preciso instanciar um objeto
+		//colocando o resultado da soma de dois números na variável 'resultado'
+		//o parâmetro são os 2 valores que serão somados
+		System.out.println(resultado); //mostrando o resultado na tela
+		
 		resultado = Matematica.subtrair(200, 78);
 		System.out.println(resultado);
 		
