@@ -1,21 +1,23 @@
 
-public class Veiculo {
+public class Veiculo {  //classe-mãe Veículo
 
-	protected String marca;
-	protected String modelo;
+	//atributos com o modificador protected
+	protected String marca;  //permite acesso às classes filhas, mas proíbe a qualquer outro acesso externo.
+	protected String modelo; //já o private proíbe qualquer acesso externo à própria classe, inclusive das classes filhas.
 	protected int ano;
 	private String nome;
 
-	public void buzinar() {
+	public void buzinar() {  //método que todas as classes-filhas devem ter
 		System.out.println("BI BI");
 	}
 
-	public void imprimir() {
+	public void imprimir() {   //método que todas as classes-filhas devem ter
 		System.out.println("Marca: "+ marca);
 		System.out.println("Modelo: " + modelo);
 		System.out.println("Ano " + ano);
 	}
 	
+	//métodos getters e setters para acessar atributos
 	public String getMarca() {
 		return marca;
 	}
