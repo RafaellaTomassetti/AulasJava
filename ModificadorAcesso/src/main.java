@@ -3,7 +3,9 @@ public class main {
 
 	public static void main(String[] args) {
 
-		ContaBancaria conta1 = new ContaBancaria(true, 3.0); // () = construtor
+		ContaBancaria conta1 = new ContaBancaria(true, 3.0); // instanciando objeto com par√¢metros da classe
+								     // ContaBancaria
+		// () = construtor
 
 //		conta1.ativo = true;
 //		conta1.numConta = 1234;
@@ -15,54 +17,56 @@ public class main {
 //		System.out.println(conta1.saldo);
 
 		// conta1.receber(100.8);
-		conta1.dar(200);
-		System.out.println(conta1.saldo());
 
-		ContaBancaria conta2 = new ContaBancaria();
+		conta1.dar(2); // utilizando o m√©todo dar para retirar dinheiro do objeto conta1
+		System.out.println(conta1.saldo()); // mostrando o saldo da conta 1
+
+		ContaBancaria conta2 = new ContaBancaria(); // instanciando objeto da classe ContaBancaria sem par√¢metros, ent√£o
+													// ele vai pegar as informa√ß√µes do construtor vazio
+													// () = construtor
 		// conta2.receber(200.8);
 
-		System.out.println(conta2.saldo());
+		System.out.println(conta2.saldo()); // mostrando o saldo da conta 2
 
-		Cliente cliente1 = new Cliente();
-		cliente1.setNome("Rafael");
+		Cliente cliente1 = new Cliente(); // instanciando objeto da classe Cliente
+		cliente1.setNome("Rafael");    //utilizando o set para definir os atributos do objeto
 		cliente1.setCpf(123456);
 		cliente1.setNumConta(77777);
 
-		System.out.println(cliente1.getNome());
+		System.out.println(cliente1.getNome());   //utilizando o get para ter acesso aos atributos privados e mostrar na tela
 		System.out.println(cliente1.getCpf());
 		System.out.println(cliente1.getNumConta());
 
 		System.out.println(cliente1);
 
-		Cliente cliente2 = new Cliente();
-		cliente2.setNome("Rafael");
+		Cliente cliente2 = new Cliente();  // instanciando objeto da classe Cliente
+		cliente2.setNome("Rafael");  //utilizando o set para definir os atributos do objeto
 		cliente2.setCpf(123456);
 		cliente2.setNumConta(77777);
 
-		
 		System.out.println(cliente2);
 
-		if (cliente1.getNome() == cliente2.getNome()) { //compara o conte˙do de uma vari·vel
-			System.out.println("Os nomes s„o iguais");
+		if (cliente1.getNome() == cliente2.getNome()) { // compara o conte√∫do de uma vari√°vel
+			System.out.println("Os nomes s√£o iguais"); // se os nomes forem iguais, aparece essa mensagem
 		} else {
-			System.out.println("Os nomes s„o diferentes");
-
-		}
-		
-		if(cliente1 == cliente2) { //compara os endereÁos de um objeto
-			System.out.println("Os endereÁos dos objetos s„o iguais");
-		} else {
-			System.out.println("Os endereÁos dos objetos s„o diferentes");
+			System.out.println("Os nomes s√£o diferentes"); // se n√£o forem iguais, aparece essa mensagem
 
 		}
 
-		if(cliente1.equals(cliente2)) {    //compara os conte˙dos dos objetos
-			System.out.println("Os atributos dos objetos s„o iguais");
+		if (cliente1 == cliente2) { // como n√£o tem nenhum get, compara os ENDERE√áOS dos objetos
+			System.out.println("Os endere√ßos dos objetos s√£o iguais");
 		} else {
-			System.out.println("Os atributos do objetos s„o diferentes");
+			System.out.println("Os endere√ßos dos objetos s√£o diferentes");
+
 		}
-			
-		
+
+		if (cliente1.equals(cliente2)) { // compara os conte√∫dos dos objetos
+			System.out.println("Os atributos dos objetos s√£o iguais");
+		} else {
+			System.out.println("Os atributos dos objetos s√£o diferentes");
+		}
+
 	}
 
 }
+
