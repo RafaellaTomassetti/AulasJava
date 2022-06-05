@@ -9,8 +9,8 @@ public class ContaInvestimento extends ContaBancaria {  //classe pública que he
 		
 		saldofinal = getSaldo()*1.05; //fórmula para calcular o saldo acrescido de 5%
 		
-		System.out.println("Seu saldo final na Conta investimento é R$ " + saldofinal);
-		return saldofinal;
+		System.out.println("Seu saldo final na Conta investimento é R$ " + saldofinal); //mostrando na tela o saldo final da conta corrente
+		return saldofinal; //retorno da variável
 		
 		
 	}
