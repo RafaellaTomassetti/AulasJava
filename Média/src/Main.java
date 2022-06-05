@@ -3,19 +3,13 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		MÈdia nota1 = new MÈdia(); // criando a vari·vel e instanciando o objeto pessoa
-		MÈdia.nota1 = 8.5;
+		Media notas = new Media(); // criando a vari√°vel e instanciando o objeto pessoa
+		notas.setNota1(8.5);
+		notas.setNota2(6.4);
+		notas.setNota2(9.5);
 
-		nota1.multiplicar1(8.5);
-
-		MÈdia nota2 = new MÈdia();
-		MÈdia.nota2 = 7.5;
-		nota2.multiplicar2(7.5);
-
-		MÈdia nota3 = new MÈdia();
-		MÈdia.nota3 = 6;
-		nota3.multiplicar3(6);
-
+		notas.imprimir();
+		
 	}
 
 }
