@@ -19,23 +19,26 @@ public class Aplicacao {
 		resultado = Matematica.subtrair(200, 78);
 		System.out.println(resultado);
 		
-//		Contador contador1 = new Contador();
+//		Contador contador1 = new Contador();  //instanciando objeto contador1
 //		Contador contador2 = new Contador();
 //		Contador contador3 = new Contador();
-//		contador1.incrementar();
+//		contador1.incrementar();             //incrementando valor no contador1
+		//lembrando que o contador se inicia com o valor 1, e o método incrementar soma 1 a variável
 //		
 //		
-//		System.out.println(contador1.getValor());
+//		System.out.println(contador1.getValor());  //mostrando o valor do contador
 //		System.out.println(contador2.getValor());
 //		System.out.println(contador3.getValor());
 		
-//		Contador.incrementar();
+//		Contador.incrementar();  //como o método incrementar é static, não precisa 
+		//instanciar objeto para utilizar o método
+		
 //		Contador.incrementar();
 //		Contador.incrementar();
 //
-//		System.out.println(Contador.getValor());
+//		System.out.println(Contador.getValor()); //mostrando o valor do Contador
 //		
-		System.out.println(Constante.MEDIA_DA_PROVA);
+		System.out.println(Constante.MEDIA_DA_PROVA); //mostrando o valor da constante 
 		
 		
 		
