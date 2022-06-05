@@ -1,28 +1,39 @@
 
-public class Média {
+public class Media {
 
-	Double nota1;
-	Double nota2;
-	Double nota3;
+	private Double nota1;
+	private Double nota2;
+	private Double nota3;
 
-	void multiplicar1(Double nota1);{
-			this.nota1 * 3; 
-		}
+	public void imprimir() {
+	double notafinal = (this.nota1 * 3 + this.nota2 * 2 + this.nota3 * 5)/10;
+	System.out.println(notafinal);
 
-	void multiplicar2(Double nota2);{
-			this.nota2 * 2; 
-		}
+	}
 
-	void multiplicar3(Double nota3);{
-			this.nota3 * 5; 
-		}
+	public Double getNota1() {
+		return nota1;
+	}
 
-	void media(double nota1, double nota2, double nota3);
+	public void setNota1(Double nota1) {
+		this.nota1 = nota1;
+	}
 
-	{
-		(this.nota1 += this.nota2 += this.nota3)/10;
-		}
+	public Double getNota2() {
+		return nota2;
+	}
+
+	public void setNota2(Double nota2) {
+		this.nota2 = nota2;
+	}
+
+	public Double getNota3() {
+		return nota3;
+	}
+
+	public void setNota3(Double nota3) {
+		this.nota3 = nota3;
+	}
 
 }
 
-}
