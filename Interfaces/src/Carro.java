@@ -1,7 +1,7 @@
 
-public interface Carro extends Automovel{
-	//Carro j� vai herdar tudo de Autom�vel
+public interface Carro extends Automovel{  //interface Carro que estende de Automóvel
 	
-	public void abrirPorta();
+	//Carro já vai herdar tudo de Automóvel
+	public void abrirPorta();   //novo método para Carro
 	
 }
