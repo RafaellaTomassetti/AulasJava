@@ -7,7 +7,7 @@ public class ContaCorrente extends ContaBancaria{ //classe pública que herda a 
 		
 		saldofinal = getSaldo()*0.90; //fórmula para calcular o saldo menos 10%
 		
-		System.out.println("Seu saldo final na Conta Corrente é R$ " + saldofinal);  //mostarndo na tela o saldo final da conta corrente
+		System.out.println("Seu saldo final na Conta Corrente é R$ " + saldofinal);  //mostrando na tela o saldo final da conta corrente
 		return saldofinal;  //retorno da variável
 	}
 
