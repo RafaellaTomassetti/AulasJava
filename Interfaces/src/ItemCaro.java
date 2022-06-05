@@ -1,8 +1,9 @@
 
 public interface ItemCaro {
-//interfaces n�o t�m atributos
+//interfaces não têm atributos e tem apenas assinaturas de métodos
+	//cabe à classe que a utiliza, immplementar as assinaturas
 	
-	double getPreco();
+	double getPreco(); //atributos
 	
 	
 }
