@@ -1,10 +1,11 @@
 
 public abstract class ContaBancaria {  //classe abstrata não pode ser instanciada
+	//classe abtsrata não pode ter um objeto criado a partir de sua instanciação
 	
 	private double saldo = 10; //atributo visível apenas para as subclasses
 	
 	public double depositar(double valor) { //método para somar um valor ao saldo inicial. O parâmetro é o valor que será somado.
-		saldo = saldo+valor;
+		saldo = saldo+valor;  //fórmula da soma
 		System.out.println("Depósito de R$ " + valor + " realizado.");
 		return saldo;
 		
@@ -23,9 +24,9 @@ public abstract class ContaBancaria {  //classe abstrata não pode ser instancia
 		
 		
 	}
-	public double transferir(double valor) { //método para transerir um valor do saldo inicial. O parâmetro é o valor que será trsnferido.
+	public double transferir(double valor) { //método para transerir um valor do saldo inicial. O parâmetro é o valor que será trasnferido.
 	  
-	    if (valor>saldo) { //teste para saber se tem valor suficiente para trsnsferir.
+	    if (valor>saldo) { //teste para saber se tem valor suficiente para trasnsferir.
 			System.out.println("Você não tem valor sufuciente para fazer essa transferência. Seu saldo atual é " + saldo);
 		} else {
 			  saldo = saldo-valor;
@@ -39,7 +40,7 @@ public abstract class ContaBancaria {  //classe abstrata não pode ser instancia
 	
 
 	
-	//Getters e Setters
+	//Getters e Setters para ter acesso aos atributos privados
 	public double getSaldo() {
 		return saldo;
 	}
