@@ -1,14 +1,16 @@
 
-public class Ferrari implements Automovel, ItemCaro{
+public class Ferrari implements Automovel, ItemCaro{  //classe Ferrari que implementa de Automóvel e ItemCaro
 
+	
+	//sobreescrita dos métodos da interface Automóvel
 	@Override
 	public void virarDireita() {
-		System.out.println("Ferrari virou � direita");
+		System.out.println("Ferrari virou à direita");
 	}
 
 	@Override
 	public void virarEsquerda() {
-		System.out.println("Ferrari virou � esquerda");
+		System.out.println("Ferrari virou à esquerda");
 
 	}
 
@@ -18,7 +20,8 @@ public class Ferrari implements Automovel, ItemCaro{
 
 		
 	}
-
+	
+	//sobreescrita dos métodos da interface ItemCaro
 	@Override
 	public double getPreco() {
 		return 1000000;
