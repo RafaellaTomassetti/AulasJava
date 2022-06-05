@@ -1,52 +1,52 @@
 
 public class Aplicacao {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //classe-mãe para executar o programa
 
 		
-		Veiculo veiculo = new Veiculo();
+		Veiculo veiculo = new Veiculo();  //instanciando objeto da classe Veiculo
 	
-		veiculo.setMarca("Honda");
+		veiculo.setMarca("Honda");   //utilizando set para atribuir um valor na variável
 		veiculo.setModelo("City");
 		veiculo.setAno(2013);
 
 		
-		veiculo.imprimir();
+		veiculo.imprimir();  //utilizando o método no objeto
 		veiculo.buzinar();
-		System.out.println();
+		System.out.println();  //deixando uma linha em branco
 
 		
-		// agora � um novo objeto, ent�o tem que atribuir as caracter�ticas novamente
+		// agora é um novo objeto, então tem que atribuir as caracteríticas novamente
 		
-		Carro carro = new Carro();
-		carro.setMarca("Volvo");
+		Carro carro = new Carro();   //novo objeto que vem da classe Carro
+		carro.setMarca("Volvo");  //utilizando set para atribuir um valor na variável
 		carro.setModelo("XC 60");
 		carro.setAno(2022);
 		carro.setQuatroPortas(true);
 		
-		carro.imprimir();
+		carro.imprimir();  //utilizando o método no objeto
 		carro.buzinar();		
-		System.out.println();
+		System.out.println();  //deixando uma linha em branco
 
 
-		Caminhao caminhao = new Caminhao();
-		caminhao.setMarca("Mercedes");
+		Caminhao caminhao = new Caminhao();  //novo objeto que vem da classe Caminhão
+		caminhao.setMarca("Mercedes");  //utilizando set para atribuir um valor na variável
 		caminhao.setModelo("568");
 		caminhao.setAno(2022);
 		
-		caminhao.imprimir();
+		caminhao.imprimir();  //utilizando o método no objeto
 		caminhao.buzinar();
-		System.out.println();
+		System.out.println();  //deixando uma linha em branco
 		
-		Moto moto = new Moto();
-		moto.setMarca("Motooo");
+		Moto moto = new Moto();  //novo objeto que vem da classe Moto
+		moto.setMarca("Motooo");  //utilizando set para atribuir um valor na variável
 		moto.setModelo("777");
 		moto.setAno(2022);
 		
-		moto.imprimir();
+		moto.imprimir(); //utilizando o método no objeto
 		moto.buzinar();
-		moto.empinar();
-		System.out.println();
+		moto.empinar();  //esse é o método específico da moto
+		System.out.println();//deixando uma linha em branco
 
 
 	}
