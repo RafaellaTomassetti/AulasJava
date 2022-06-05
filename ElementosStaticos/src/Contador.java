@@ -9,14 +9,14 @@ public class Contador {
 //	}
 
 	static {  // método static que executa uma função sem a depender de um objeto
-		valor=1;
+		valor=1;  //a variável já se inicia com o valor 1
 	}
 	
 	public static void incrementar() {  //método static incrementar
 		valor ++;   //incrementa em 1 a variável
 	}
 	
-	//métodos getter e setter
+	//métodos getter e setter para acessar os atributos privados  
 	public static int getValor() {
 		return valor;
 	}
