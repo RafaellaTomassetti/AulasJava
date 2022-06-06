@@ -1,14 +1,14 @@
 
-public class Aplicação {
+public class AplicaÃ§Ã£o {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //classe main para executar o programa
 
-		Preparador preparador = new Preparador();
+		Preparador preparador = new Preparador(); //instanciando objeto da classe Preparador
 		
-		LeiteQuente leiteQuente = new LeiteQuente();
+		LeiteQuente leiteQuente = new LeiteQuente(); //instanciando objeto da classe LeiteQuente
 		preparador.prepararBebida(leiteQuente);        //preparando a bebida leite quente
 		
-		Refrigerante refrigerante = new Refrigerante();
+		Refrigerante refrigerante = new Refrigerante(); //instanciando objeto da classe Refrigerante
 		preparador.prepararBebida(refrigerante);      //preparando a bebida refrigerante
 		
 	}
