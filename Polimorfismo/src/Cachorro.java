@@ -1,6 +1,6 @@
 
 public class Cachorro extends Animal{  //classe Cachorro que estende de Animal
-	//Cachorro éa classe-filha
+	//Cachorro é a classe-filha
 	
 	//sobrescrita do método falar da classe-mãe
 	@Override
