@@ -1,14 +1,15 @@
 
 public class Rota {
 
-	public void ir(Automovel automovel) {      //automÛvel È o par‚metro pois ele È mais genÈrico.
-		//se fosse Ferrari, essa classe sÛ caberia ‡ ela 
+	public void ir(Automovel automovel) {      //autom√≥vel √© o par√¢metro pois ele √© mais gen√©rico.
+		//se fosse Ferrari, essa classe s√≥ caberia √† ela 
 		
+		//aplicando os m√©todos na vari√°vel
 		automovel.virarDireita();
 		automovel.virarEsquerda();
 		automovel.acelerar();
 		automovel.virarDireita();
-		System.out.println();
+		System.out.println(); 
 		
 	}
 	
