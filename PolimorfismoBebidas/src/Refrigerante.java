@@ -1,5 +1,5 @@
 
-public class Refrigerante extends Bebida {
+public class Refrigerante extends Bebida {  //classe Refrigerante que estende da superclasse Bebida
 
 	public Refrigerante() { 
 		super("Refrigerante", false);  //o construtor está recebendo informação da classe
