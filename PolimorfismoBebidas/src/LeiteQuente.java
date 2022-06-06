@@ -9,7 +9,7 @@ public class LeiteQuente extends Bebida { //classe LeiteQuente que estende da su
 
 	@Override
 	public void preparar() {          //sobrescrita do método preparar da superclasse
-		super.preparar();
+		super.preparar();       //utilizando o método da superclasse Bebida
 		System.out.println("Colocando o leite no copo"); //mostando a preparação 
 
 		
