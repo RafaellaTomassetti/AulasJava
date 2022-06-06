@@ -21,7 +21,7 @@ public class Sabonete {
 	public Sabonete(String texto) {  //construtor com o parâmetro de String
 		String[] arrayAuxiliar1 = texto.split(",");  //split usado para dividir o toString a cada vírgula que aparecer
 		String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("=");
-		//cria uma nova variável para pegar a posição 0 da arrayLinha e dividir quando aparecer o "="
+		//cria uma nova variável para pegar a posição 0 da arrayAuxiliar1 e dividir quando aparecer o "="
 		this.cheiro = arrayAuxiliar2[1].trim(); //o cheiro será exatamente a parte que o CHEIRO foi dividido
 		//o trim tira os espaços vazios dos lados 
 
