@@ -6,7 +6,7 @@ public class Carro extends Veiculo{ //classe-filha que estende da classe-mãe Ve
 		return quatroPortas;  //retorna a variável
 	}
 
-	public void setQuatroPortas(boolean quatroPortas) {
+	public void setQuatroPortas(boolean quatroPortas) { //como o atributo é privado, precisa do set para definir se o carro tem 4 portas(true) ou não(false)
 		this.quatroPortas = quatroPortas;
 	}
 
