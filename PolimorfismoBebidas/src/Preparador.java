@@ -14,6 +14,6 @@ public class Preparador {
 	} 
 	
 		System.out.println("Bebida preparada com sucesso"); //mostra o fim do processo de preparação
-	System.out.println();
+	System.out.println(); //deixa uma linha em branco
 }
 }
