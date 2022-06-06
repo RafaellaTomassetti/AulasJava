@@ -22,7 +22,7 @@ public class Aplicacao {
 		carro.setMarca("Volvo");  //utilizando set para atribuir um valor na variável
 		carro.setModelo("XC 60");
 		carro.setAno(2022);
-		carro.setQuatroPortas(true);
+		carro.setQuatroPortas(true); //usando o set para definir se o carro tem 4 portas(true) ou não(false)
 		
 		carro.imprimir();  //utilizando o método no objeto
 		carro.buzinar();		
