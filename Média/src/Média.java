@@ -1,16 +1,19 @@
 
 public class Media {
 
+	//atributos privados
 	private Double nota1;
 	private Double nota2;
 	private Double nota3;
 
-	public void imprimir() {
+	public void imprimir() {  //método imprimir
 	double notafinal = (this.nota1 * 3 + this.nota2 * 2 + this.nota3 * 5)/10;
-	System.out.println(notafinal);
+	//fórmula da média que será salva na variável notafinal
+	System.out.println(notafinal);  //mostrando na tela a nota final
 
 	}
 
+	//métodos getters e setters para acessar os atributos privados
 	public Double getNota1() {
 		return nota1;
 	}
