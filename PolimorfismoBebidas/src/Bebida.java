@@ -1,23 +1,23 @@
 
 public class Bebida {
 	
-	private String nome;        //atribuiÁıes da superclasse, que ser„o extendidas para as subclasses
+	private String nome;        //atribui√ß√µes da superclasse, que ser√£o estendidas para as subclasses
 	private boolean aquecer;
 	
-
+	//construtor que recebe os atributos
 	public Bebida(String nome, boolean aquecer) {
 			super();
 			this.nome = nome;
 			this.aquecer = aquecer;
 		}
 	
-	
+	//m√©todo preparar
 	public void preparar() {
 		System.out.println("Pegando copo");
 
 	}
 
-	
+	//m√©todos getters e setters para ter acesso aos atributos privados
 	public String getNome() {
 		return nome;
 	}
