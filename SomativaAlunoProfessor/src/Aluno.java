@@ -14,7 +14,8 @@ public class Aluno extends Usuario {
 	
 	@Override
 	public String toString() {
-		return "Aluno [nome " +  valorPagarCurso=" + this.valorPagarCurso + ", curso=" + curso.toString() + ", formaPag=" + formaPag + "]";
+		return "Aluno [nome= " + this.getNome() + ", cpf= " + this.getCpf() + ", valorPagarCurso=" + this.getValorPagarCurso() +  ", formaPag=" + 
+	formaPag + "]" + " Curso [" + curso.toString();
 	}
 
 

@@ -13,7 +13,7 @@ public class Professor extends Usuario {
 	
 	@Override
 	public String toString() {
-		return " Professor [ nome= "+ this.getNome() + ", salario= " + salario + ", cpf = " + this.getCpf() +"]";
+		return " Professor [ nome= "+ this.getNome() + ", salario= " + salario + ", cpf = " + this.getCpf() +"]\n";
 	}
 
 

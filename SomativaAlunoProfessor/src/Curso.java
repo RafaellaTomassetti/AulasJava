@@ -18,7 +18,7 @@ public class Curso {
 	
 	@Override
 	public String toString() {
-		return " [titulo= " + titulo + ", qtdHorasCurso= " + qtdHorasCurso + ", valorHoraCurso= " + valorHoraCurso + " ]" +professor.toString();
+		return " titulo= " + titulo + ", qtdHorasCurso= " + qtdHorasCurso + ", valorHoraCurso= " + valorHoraCurso + " ]" + professor.toString();
 	}
 
 

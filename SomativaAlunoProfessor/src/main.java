@@ -37,9 +37,9 @@ public class main {
 		
 		for (Aluno alunos: listaDeAlunos) {
 		System.out.println("O/A aluno(a) " + alunos.getNome() + ", portador do cpf " + alunos.getCpf() + ", está matriculado no curso de " + alunos.getCurso().getTitulo() + ".");
-		System.out.println("Seu/sua professor(a) será " + alunos.getCurso().getProfessor().getNome() );
-		System.out.println("Sua forma de pagamento será " + alunos.getFormaPag());
-		System.out.println("Com valor total de " + alunos.getValorPagarCurso());
+		System.out.println("Seu/sua professor(a) será " + alunos.getCurso().getProfessor().getNome() + ".");
+		System.out.println("Sua forma de pagamento será " + alunos.getFormaPag() + ".");
+		System.out.println("Com valor total de R$ " + alunos.getValorPagarCurso() + ".");
 		System.out.println("-------------------------------------------------------------------------------");
 		}
 		
