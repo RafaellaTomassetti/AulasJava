@@ -9,14 +9,14 @@ public enum DiaDaSemana {  //classe enum define um conjunto de valores CONSTANTE
 	SEXTA(6),
 	SABADO(7);
 	
-	private int num;  //n„o consegue acessar de fora
-	// j· vai dizer o que cada dia vai receber
+	private int num;  //n√£o consegue acessar de fora
+	// j√° vai dizer o que cada dia vai receber
 
-	private DiaDaSemana(int num) { //obriga a declarar os par‚metros das constantes
+	private DiaDaSemana(int num) { //obriga a declarar os par√¢metros das constantes(o num)
 		this.num = num;
 	}
 	
-	//MÈtodo get para ter acesso ‡ vari·vel privada
+	//M√©todo get para ter acesso √† vari√°vel privada
 	public int getNum() {
 		return num;
 	}
