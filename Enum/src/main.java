@@ -1,31 +1,31 @@
 
 public class main {
 	
-	public static final double PI = 3.14;  //determina que È constante
+	public static final double PI = 3.14;  //determina que √© constante
 
-	private enum Sexo{   //Criando enum dentro da prÛpria classe
+	private enum Sexo{   //Criando enum dentro da pr√≥pria classe
 		MASCULINO, FEMININO  //definindo constantes
 	}
 	
 	public static void main(String[] args) {
 
-		double pi = main.PI;
+		double pi = main.PI; //salvando a constante PI da classe main na vari√°vel 'pi'
 		
-		DiaDaSemana hoje = DiaDaSemana.SEGUNDA;  //S” CONSEGUE COLOCAR O ENDERE«O DE UM OBJETO 
+		DiaDaSemana hoje = DiaDaSemana.SEGUNDA;  //S√ì CONSEGUE COLOCAR O ENDERE√áO DE UM OBJETO 
 		
-		int num = DiaDaSemana.SEGUNDA.getNum();
-		System.out.println(num);
+		int num = DiaDaSemana.SEGUNDA.getNum();  //num est√° recebendo o n√∫mero que representa o dia da semana SEGUNDA
+		System.out.println(num); //mostrando na tela o n√∫mero que representa o dia da semana SEGUNDA
 		
-		String s = "TERCA";
+		String s = "TERCA";  //s recebe a string 
 		hoje = DiaDaSemana.valueOf(s); //vai procurar a lista de constantes de DiaDaSemana um valor que corresponda 
 		//nesse caso, vai tentar encontrar um valor parecido com "TERCA"
 		
-		System.out.println(hoje.getNum());//vai mostrar o n˙mero correspondente ao dia 
+		System.out.println(hoje.getNum());//vai mostrar o n√∫mero correspondente ao dia 
 		
-		//CRIA«√O DE ENUM DENTRO DA CLASSE
+		//CRIA√á√ÉO DE ENUM DENTRO DA CLASSE
 		
-		Sexo sexo = Sexo.MASCULINO ;
-		sexo = Sexo.FEMININO;
+		Sexo sexo = Sexo.MASCULINO ;  //vari√°vel sexo do enum Sexo que recebe MASCULINO
+		sexo = Sexo.FEMININO;  //vari√°vel sexo do enum Sexo que recebe FEMININO
 
 	
 
