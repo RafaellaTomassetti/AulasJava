@@ -1,6 +1,6 @@
 
 public abstract class ContaBancaria {  //classe abstrata não pode ser instanciada
-	//classe abtsrata não pode ter um objeto criado a partir de sua instanciação
+	//classe abstrata não pode ter um objeto criado a partir de sua instanciação
 	
 	private double saldo = 10; //atributo visível apenas para as subclasses
 	
