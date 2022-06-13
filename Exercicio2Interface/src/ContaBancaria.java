@@ -24,9 +24,9 @@ public abstract class ContaBancaria {  //classe abstrata não pode ser instancia
 		
 		
 	}
-	public double transferir(double valor) { //método para transerir um valor do saldo inicial. O parâmetro é o valor que será trasnferido.
+	public double transferir(double valor) { //método para transerir um valor do saldo inicial. O parâmetro é o valor que será transferido.
 	  
-	    if (valor>saldo) { //teste para saber se tem valor suficiente para trasnsferir.
+	    if (valor>saldo) { //teste para saber se tem valor suficiente para transferir.
 			System.out.println("Você não tem valor sufuciente para fazer essa transferência. Seu saldo atual é " + saldo);
 		} else {
 			  saldo = saldo-valor;
