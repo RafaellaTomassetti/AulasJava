@@ -6,13 +6,16 @@ public class main {
 
 		Produto produto = new Produto();
 		Scanner scanner = new Scanner(System.in);
+		Scanner scanner2 = new Scanner(System.in);
 		Menu menu = new Menu();
 		
 		while (menu.getOpcao() != 2) {
 
-			System.out.println("Escolha o que fazer no menu:");
-			System.out.println("1- CALCULAR VALOR DO PRODUTO\n 2- SAIR DO PROGRAMA");
+		System.out.println("Escolha o que fazer no menu:");
+		System.out.println("1- CALCULAR VALOR DO PRODUTO\n 2- SAIR DO PROGRAMA");
+		menu.setOpcao(scanner2.nextInt());
 
+		if (menu.getOpcao() == 1) {
 		
 		System.out.println("Qual produto desejado?");
 		produto.setNome(scanner.next());
@@ -26,4 +29,5 @@ public class main {
 
 	}
 	}
+}
 }
