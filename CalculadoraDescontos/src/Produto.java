@@ -5,9 +5,9 @@ public class Produto {
 	private double porcentagemdesconto;
 	
 	public double calculardesconto() {
-		
-		double porcentagem = 100
-		double valorfinal == this.valor*(100-this.porcentagemdesconto)
+		double porcentagem = (100 -this.porcentagemdesconto)/100;
+		double valorfinal = this.valor*porcentagem;
+		return valorfinal;
 	}
 	
 	public String getNome() {
