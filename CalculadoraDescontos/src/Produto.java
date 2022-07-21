@@ -4,10 +4,12 @@ public class Produto {
 	private double valor;
 	private double porcentagemdesconto;
 	
-	public double calculardesconto() {
+	
+	public String calculardesconto() {
+		
 		double porcentagem = (100 -this.porcentagemdesconto)/100;
 		double valorfinal = this.valor*porcentagem;
-		return valorfinal;
+		return "O valor final do produto "+ this.nome+" com desconto é " + valorfinal;
 	}
 	
 	public String getNome() {

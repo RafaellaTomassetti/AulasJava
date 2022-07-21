@@ -26,8 +26,15 @@ public class main {
 		System.out.println("Qual a porcentagem de desconto do produto desejado?");
 		produto.setPorcentagemdesconto(scanner.nextDouble());	
 		
+		System.out.println(produto.calculardesconto());
+		
 
-	}
-	}
+		}
+	 else {
+
+	System.out.println("Programa finalizado");
 }
+
+}
+	}
 }
