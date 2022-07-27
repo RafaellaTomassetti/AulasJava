@@ -7,7 +7,7 @@ public class Lata {
 	
 	public void calcularVolume(double raio, double altura) {
 		this.volume = Math.PI * raio * raio * altura;
-	    System.out.println("O valor do volume da lata de óleo é: " + this.volume);
+	    System.out.println("O valor do volume da lata de óleo é: " + this.volume + " m3.");
 	    
 	}
 	
